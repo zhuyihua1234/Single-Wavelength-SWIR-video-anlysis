@@ -1,4 +1,4 @@
-file = '1.avi'
+file = 'ProximalTransillumination_lingual.avi'
 [pathstr,name,ext] = fileparts(file);
 mkdir(name);
 outputFolder = uigetdir(path);
