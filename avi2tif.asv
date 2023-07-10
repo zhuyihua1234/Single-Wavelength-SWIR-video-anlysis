@@ -1,17 +1,10 @@
-% This program converts AVI video into individual TIF frames
-% Instructions:
-    % Run the program inside the folder that contains your AVI videos
-    % Select the video you want to convert
-    % Select the folder you wish to save the video to
-
+% This program con
 
 file = uigetfile('*.avi');
 [pathstr,name,ext] = fileparts(file);
-% Create new folder that contains TIF frames
 mkdir(name);
 outputFolder = uigetdir(path);
 %%
-% Initiate conversion
 obj = VideoReader(file);
 vid = read(obj);
 frames = obj.NumberOfFrames;
