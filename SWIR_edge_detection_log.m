@@ -9,7 +9,6 @@ grayImage = fliplr(raw_img);
 % Select Edge Detection Algorithm and choose threshold
 edge_detection_algorithm = 'log';
 
-%%
 % Create edge detection with different sigma values
 BW2 = edge(cropped_img,edge_detection_algorithm,0.0004);
 BW3 = edge(cropped_img,edge_detection_algorithm,0.0006);
