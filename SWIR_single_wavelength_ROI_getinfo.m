@@ -6,7 +6,7 @@
     % Press "Enter" or double click the box
 % Author: Yihua Zhu
 
-img = imread('13_BP850.bmp');
+img = imread('Frame 0999.tif');
 if size(img,3)==3
     img_gray = rgb2gray(img)
 else img_gray = img
